@@ -55,7 +55,7 @@
   }
   
   section {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
@@ -106,18 +106,9 @@
     margin-bottom: 0.5rem;
   }
 
-  @media screen and (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-    }
-  
-    nav li {
-      margin-bottom: 1rem;
-    }
-  }
-  /* Add this at the end of your styles.css file */
 
-  @media screen and (max-width: 768px) {
+/* Add this media query at the end of your styles.css file */
+@media screen and (max-width: 768px) {
     nav ul {
       display: flex;
       flex-wrap: wrap;
@@ -125,7 +116,7 @@
     }
   
     nav li {
-      margin-bottom: 1rem;
+      margin-bottom: 0; /* Remove the bottom margin */
       margin-right: 0.5rem;
     }
   }
