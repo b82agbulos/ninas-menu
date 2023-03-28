@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catering Inquiry Form - Nina's Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- Add your navigation menu here -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#menu">Menu</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="order-form.html">Order</a></li>
+        <li><a href="catering.html">Catering</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="catering-form">
+      <h2>Catering Inquiry Form</h2>
+      <p>Please fill out the form below to request a quote for our catering services. We'll get back to you as soon as possible with pricing and availability. </p>
+
+      <form action="submit-catering.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" name="event-date" required>
+        
+        <label for="event-time">Event Time:</label>
+        <input type="time" id="event-time" name="event-time" required>
+        
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+        
+        <label for="catering-type">Catering Type:</label>
+        <select id="catering-type" name="catering-type" required>
+          <option value="">Select a catering type</option>
+          <option value="party-trays">Party Trays</option>
+          <option value="buffet-style">Buffet Style</option>
+          <option value="plated-meals">Plated Meals</option>
+        </select>
+        
+        <label for="menu">Menu Preferences:</label>
+        <textarea id="menu" name="menu" rows="4" cols="50" placeholder="Please list any specific menu items or preferences for your event." required></textarea>
+        
+        <label for="additional-details">Additional Details:</label>
+        <textarea id="additional-details" name="additional-details" rows="4" cols="50" placeholder="Enter any additional details or special requests here."></textarea>
+        
+        <input type="submit" value="Submit Inquiry">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <!-- Add your footer content here -->
+    <p>&copy; 2023 Nina's Menu. All rights reserved. | Designed by <a href="https://github.com/b82agbulos">Bobby Agbulos</a></p>
+  </footer>
+</body>
+</html>
